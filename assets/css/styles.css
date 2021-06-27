@@ -213,6 +213,7 @@ main {
   .content {
     width: 100% !important;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    margin-bottom: 100px;
   }
 }
 
@@ -283,6 +284,7 @@ main {
   align-items: center;
   gap: 20px;
   min-height: 20vh;
+  text-align: center;
 }
 @media screen and (max-width: 840px) {
   .card-body .score-board .score { min-height: 0; }
