@@ -86,12 +86,12 @@ function getData() {
 }
 
 const Card = (data) => {
-  let { matchTime, awayTeamEvent, homeTeamEvent } = data;
+  let { matchTime, statusName, awayTeamEvent, homeTeamEvent } = data;
   matchTime = formatDate(matchTime)
   const node = document.createElement('div')
   node.classList = 'card'
   node.appendChild(CardHeader(matchTime))
-  node.appendChild(CardBody({awayTeamEvent, homeTeamEvent}))
+  node.appendChild(CardBody({statusName, awayTeamEvent, homeTeamEvent}))
   node.appendChild(CardFooter())
   return node
 }
